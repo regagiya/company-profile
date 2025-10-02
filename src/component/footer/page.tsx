@@ -61,19 +61,19 @@ export function Footer() {
           <div className="flex-grow flex items-center justify-end">
             <a
               href="https://leminerale.com/terms-conditions"
-              className="mx-6 text-center text-black font-afacad text-[18px] underline hover:text-[#2889BE]"
+              className="mx-6 text-center text-slate-600 font-afacad text-[18px] underline hover:text-[#2889BE]"
             >
               Syarat & Ketentuan
             </a>
             <a
               href="https://leminerale.com/privacy-policy"
-              className="mx-6 text-center text-black font-afacad text-[18px] underline hover:text-[#2889BE]"
+              className="mx-6 text-center text-slate-600 font-afacad text-[18px] underline hover:text-[#2889BE]"
             >
               Kebijakan Privacy
             </a>
           </div>
         </div>
-        <div className="md:h-[30px] flex items-center justify-center font-afacad text-center bg-[#35A4EC] text-black py-4">
+        <div className="md:h-[30px] flex items-center justify-center font-afacad text-center bg-[#35A4EC] text-white py-4">
           PT Tirta Fresindo Jaya .. 2025
         </div>
       </div>
