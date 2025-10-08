@@ -19,7 +19,7 @@ export default function AboutPage() {
                 <img
                   data-src="https://www.lemineral.com/storage/3629/one.png"
                   alt="Mengandung"
-                  className="lozard w-auto h-[380px]"
+                  className="lozard w-auto h-[380px] transition-transform hover:scale-105"
                   src="https://www.leminerale.com/storage/3629/one.png"
                   data-loaded="true"
                 />
@@ -33,7 +33,7 @@ export default function AboutPage() {
                 <img
                   data-src="https://www.lemineral.com/storage/3631/two.png"
                   alt="Mengandung"
-                  className="lozard w-auto h-[380px] object-contain"
+                  className="lozard w-auto h-[380px] object-contain transition-transform hover:scale-105"
                   src="https://www.leminerale.com/storage/3631/two.png"
                   data-loaded="true"
                 />
@@ -48,7 +48,7 @@ export default function AboutPage() {
                 <img
                   data-src="https://www.lemineral.com/storage/3633/three.png"
                   alt="pengemasan"
-                  className="lozard w-auto h-[380px] object-contain"
+                  className="lozard w-auto h-[380px] object-contain transition-transform hover:scale-105"
                   src="https://www.leminerale.com/storage/3633/three.png"
                   data-loaded="true"
                 />

@@ -8,7 +8,7 @@ export default function contact() {
       <form
         action="https://leminerale.com/find-us#agent"
         method="GET"
-        className="w-fit relative bg-[#56AAE3] mx-87 mt-[50px] p-4 rounded-xl mb-20"
+        className="w-fit relative bg-[#56AAE3] shadow-2xl mx-87 mt-[50px] p-4 rounded-xl mb-20"
       >
         <div className="flex flex-wrap md:flex-nowrap items-center justify-between gap-[100px]">
           <div className="gap-[100px] pl-10 flex justify-between">

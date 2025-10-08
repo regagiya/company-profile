@@ -1,8 +1,11 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { Navlink } from "../navlink/navlink";
+import { useRouter } from "next/navigation";
 
 export function Navbar() {
+  const router = useRouter();
   return (
     <nav className="flex bg-white justify-center  gap-20">
       <div className="h-[125px] flex items-center">
@@ -114,6 +117,11 @@ export function Navbar() {
               </Link>
             </li>
             <li className="transition-transform hover:scale-120">
+              <Link href="/createblog" className="menu-item">
+                CREATE BLOG
+              </Link>
+            </li>
+            <li className="transition-transform hover:scale-120">
               <a href="/teams" className="menu-item">
                 TEAMS
               </a>
@@ -125,6 +133,7 @@ export function Navbar() {
             </li>
             <button
               type="button"
+              onClick={() => router.push("/logIn")}
               className="transition-transform hover:scale-120"
             >
               SIGN IN
