@@ -1,7 +1,7 @@
 import SignOut from "@/component/signout";
 import SignIn from "@/component/signin";
 
-export default function Login() {
+export default async function Login() {
   return (
     <main>
       <div className="bg-white h-screen">

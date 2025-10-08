@@ -5,7 +5,6 @@ import Link from "next/link";
 export default async function Blog() {
   const articles = await getNewsHeadline();
   console.log(articles);
-  console.log("halo");
 
   const printNews = () => {
     return articles.map((value, index) => {

@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 import Link from "next/link";
 import { Navlink } from "../navlink/navlink";
 import { useRouter } from "next/navigation";
@@ -132,8 +132,8 @@ export function Navbar() {
               </a>
             </li>
             <button
-              type="button"
               onClick={() => router.push("/logIn")}
+              type="button"
               className="transition-transform hover:scale-120"
             >
               SIGN IN

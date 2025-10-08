@@ -3,6 +3,8 @@ import { Geist, Geist_Mono, Afacad } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "../component/navbar/navbar";
 import { Footer } from "../component/footer/page";
+import SignIn from "@/component/signin";
+import { SessionProvider } from "next-auth/react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,7 +27,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -33,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${afacad.variable}antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
         {children}
