@@ -24,7 +24,7 @@ export default function contact() {
               id="city"
               className="bg-white text-[#68B8F3] w-full border-none rounded-lg h-[60] "
             >
-              <option value="0">--Kota Kabupaten--</option>
+              <option value="0">-Kota Kabupaten-</option>
               <option value="Jakarta">Jakarta</option>
               <option value="Banten">Banten</option>
               <option value="Jawa Barat">Jawa Barat</option>
@@ -40,7 +40,7 @@ export default function contact() {
               id="sub_district"
               className="bg-white text-[#68B8F3]  w-full border-none rounded-lg h-[60]"
             >
-              <option value="0">--Kecamatan--</option>
+              <option value="0">-Kecamatan-</option>
               <option value="Leuwi Panjang">Leuwi Panjang</option>
               <option value="Lengkong">Lengkong</option>
               <option value="Cibaduyut">Cibaduyut</option>
@@ -57,7 +57,7 @@ export default function contact() {
               id="vilage"
               className="bg-white text-[#68B8F3]  w-full border-none rounded-lg h-[60]"
             >
-              <option value="0">--Kelurahan--</option>
+              <option value="0">-Kelurahan-</option>
               <option value="Ibun">Ibun</option>
               <option value="Majalaya">Majalaya</option>
               <option value="Harjatani">Harjatani</option>

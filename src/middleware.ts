@@ -1,15 +1,14 @@
 import { NextResponse } from "next/server";
-import type { NextRequest } from "next/server";
+import { auth } from "./auth";
 
-export function middleware(req: NextRequest) {
-  const token = req.cookies.get("token")?.value;
-
-  if (!token && req.nextUrl.pathname.startsWith("/logIn")) {
+export default auth((req) => {
+  const isLoggedIn = req.auth;
+  if (!isLoggedIn && !req.nextUrl.pathname.startsWith("/logIn")) {
     return NextResponse.redirect(new URL("/logIn", req.url));
   }
 
-  return NextResponse.next();
-}
+  NextResponse.next();
+});
 
 export const config = {
   matcher: ["/createblog"],
