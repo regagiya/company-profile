@@ -6,12 +6,13 @@ export default async function blogDetail(props: {
   const params = await props.params;
   const slug = params.slug;
   const data = await getNewsDetail(slug);
+  console.log(data);
 
   console.log(data);
 
   return (
-    <div>
-      <h2 className="text-red-500">{data.title}</h2>
+    <div className="flex flex-col items-center">
+      <h2 className="text-black">{data.title}</h2>
       <p>{data.author}</p>
       <p>{data.content}</p>
     </div>

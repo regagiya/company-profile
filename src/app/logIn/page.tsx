@@ -23,14 +23,3 @@ export default async function Login() {
     </main>
   );
 }
-
-/*import LoginButton from "@/component/signin";
-
-export default function LogInPage() {
-  return (
-    <div className="flex flex-col items-center justify-center h-screen space-y-4">
-      <h1 className="text-2xl font-bold">Welcome! Please sign in</h1>
-      <LoginButton />
-    </div>
-  );
-}*/

@@ -21,10 +21,11 @@ export async function getNewsHeadline(): Promise<IArticle[]> {
   }
 }
 
-export async function getNewsDetail(title: string) {
+export async function getNewsDetail(slug: string) {
   try {
-    const res = await axios.get(`${BASE_URL}/${title}`);
-    return res.data;
+    const res = await axios.get(`${BASE_URL}`);
+    const title = slug.split("%20").join(" ");
+    return res.data.find((e: { title: string }) => e.title == title);
   } catch (error) {
     console.error(error);
     return [];
