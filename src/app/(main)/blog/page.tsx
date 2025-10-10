@@ -1,6 +1,7 @@
 import * as React from "react";
 import { getNewsHeadline } from "@/lib/newsapi";
 import Link from "next/link";
+import Image from "next/image";
 
 export default async function Blog() {
   const articles = await getNewsHeadline();

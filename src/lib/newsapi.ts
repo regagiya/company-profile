@@ -8,6 +8,7 @@ interface IArticle {
   description: string;
   url: string;
   urlToImage: string;
+  imageurl: string;
 }
 export async function getNewsHeadline(): Promise<IArticle[]> {
   try {
